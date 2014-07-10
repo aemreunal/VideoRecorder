@@ -21,6 +21,8 @@
 		18A83C84196EBB8C00FA8E18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A83C66196EBB8B00FA8E18 /* UIKit.framework */; };
 		18A83C8C196EBB8C00FA8E18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A83C8A196EBB8C00FA8E18 /* InfoPlist.strings */; };
 		18A83C8E196EBB8C00FA8E18 /* VideoRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */; };
+		18A83C98196EBB9F00FA8E18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */; };
+		18A83C9B196EBBB800FA8E18 /* VRRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C9A196EBBB800FA8E18 /* VRRecorder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		18A83C89196EBB8C00FA8E18 /* VideoRecorderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoRecorderTests-Info.plist"; sourceTree = "<group>"; };
 		18A83C8B196EBB8C00FA8E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecorderTests.m; sourceTree = "<group>"; };
+		18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		18A83C99196EBBB800FA8E18 /* VRRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRRecorder.h; path = Model/VRRecorder.h; sourceTree = "<group>"; };
+		18A83C9A196EBBB800FA8E18 /* VRRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VRRecorder.m; path = Model/VRRecorder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A83C98196EBB9F00FA8E18 /* CoreVideo.framework in Frameworks */,
 				18A83C65196EBB8B00FA8E18 /* CoreGraphics.framework in Frameworks */,
 				18A83C67196EBB8B00FA8E18 /* UIKit.framework in Frameworks */,
 				18A83C63196EBB8B00FA8E18 /* Foundation.framework in Frameworks */,
@@ -82,10 +88,10 @@
 		18A83C56196EBB8B00FA8E18 = {
 			isa = PBXGroup;
 			children = (
-				18A83C68196EBB8B00FA8E18 /* VideoRecorder */,
-				18A83C87196EBB8C00FA8E18 /* VideoRecorderTests */,
 				18A83C61196EBB8B00FA8E18 /* Frameworks */,
 				18A83C60196EBB8B00FA8E18 /* Products */,
+				18A83C68196EBB8B00FA8E18 /* VideoRecorder */,
+				18A83C87196EBB8C00FA8E18 /* VideoRecorderTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +107,7 @@
 		18A83C61196EBB8B00FA8E18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */,
 				18A83C62196EBB8B00FA8E18 /* Foundation.framework */,
 				18A83C64196EBB8B00FA8E18 /* CoreGraphics.framework */,
 				18A83C66196EBB8B00FA8E18 /* UIKit.framework */,
@@ -112,13 +119,14 @@
 		18A83C68196EBB8B00FA8E18 /* VideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				18A83C9C196EBBC300FA8E18 /* Model */,
+				18A83C7A196EBB8B00FA8E18 /* Images.xcassets */,
+				18A83C74196EBB8B00FA8E18 /* Main.storyboard */,
+				18A83C69196EBB8B00FA8E18 /* Supporting Files */,
 				18A83C71196EBB8B00FA8E18 /* VRAppDelegate.h */,
 				18A83C72196EBB8B00FA8E18 /* VRAppDelegate.m */,
-				18A83C74196EBB8B00FA8E18 /* Main.storyboard */,
 				18A83C77196EBB8B00FA8E18 /* VRViewController.h */,
 				18A83C78196EBB8B00FA8E18 /* VRViewController.m */,
-				18A83C7A196EBB8B00FA8E18 /* Images.xcassets */,
-				18A83C69196EBB8B00FA8E18 /* Supporting Files */,
 			);
 			path = VideoRecorder;
 			sourceTree = "<group>";
@@ -150,6 +158,15 @@
 				18A83C8A196EBB8C00FA8E18 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A83C9C196EBBC300FA8E18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A83C99196EBBB800FA8E18 /* VRRecorder.h */,
+				18A83C9A196EBBB800FA8E18 /* VRRecorder.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A83C79196EBB8B00FA8E18 /* VRViewController.m in Sources */,
+				18A83C9B196EBBB800FA8E18 /* VRRecorder.m in Sources */,
 				18A83C73196EBB8B00FA8E18 /* VRAppDelegate.m in Sources */,
 				18A83C6F196EBB8B00FA8E18 /* main.m in Sources */,
 			);
