@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface VRViewController : UIViewController
+const NSInteger MAX_RECORDING_DURATION_SECONDS = 180;
+const BOOL ALLOW_EDITING = NO;
+
+@interface VRViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) NSURL *videoURL;
 
 @end

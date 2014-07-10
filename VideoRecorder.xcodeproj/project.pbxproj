@@ -22,7 +22,8 @@
 		18A83C8C196EBB8C00FA8E18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A83C8A196EBB8C00FA8E18 /* InfoPlist.strings */; };
 		18A83C8E196EBB8C00FA8E18 /* VideoRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */; };
 		18A83C98196EBB9F00FA8E18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */; };
-		18A83C9B196EBBB800FA8E18 /* VRRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C9A196EBBB800FA8E18 /* VRRecorder.m */; };
+		18B9E92C196EE0B1008FC38C /* LaunchImage2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */; };
+		18B9E92D196EE0B1008FC38C /* LaunchImageR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,8 @@
 		18A83C8B196EBB8C00FA8E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecorderTests.m; sourceTree = "<group>"; };
 		18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		18A83C99196EBBB800FA8E18 /* VRRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRRecorder.h; path = Model/VRRecorder.h; sourceTree = "<group>"; };
-		18A83C9A196EBBB800FA8E18 /* VRRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VRRecorder.m; path = Model/VRRecorder.m; sourceTree = "<group>"; };
+		18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage2x.png; sourceTree = "<group>"; };
+		18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImageR4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,8 @@
 		18A83C56196EBB8B00FA8E18 = {
 			isa = PBXGroup;
 			children = (
+				18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */,
+				18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */,
 				18A83C61196EBB8B00FA8E18 /* Frameworks */,
 				18A83C60196EBB8B00FA8E18 /* Products */,
 				18A83C68196EBB8B00FA8E18 /* VideoRecorder */,
@@ -119,7 +122,6 @@
 		18A83C68196EBB8B00FA8E18 /* VideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				18A83C9C196EBBC300FA8E18 /* Model */,
 				18A83C7A196EBB8B00FA8E18 /* Images.xcassets */,
 				18A83C74196EBB8B00FA8E18 /* Main.storyboard */,
 				18A83C69196EBB8B00FA8E18 /* Supporting Files */,
@@ -158,15 +160,6 @@
 				18A83C8A196EBB8C00FA8E18 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		18A83C9C196EBBC300FA8E18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				18A83C99196EBBB800FA8E18 /* VRRecorder.h */,
-				18A83C9A196EBBB800FA8E18 /* VRRecorder.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B9E92D196EE0B1008FC38C /* LaunchImageR4.png in Resources */,
+				18B9E92C196EE0B1008FC38C /* LaunchImage2x.png in Resources */,
 				18A83C7B196EBB8B00FA8E18 /* Images.xcassets in Resources */,
 				18A83C6D196EBB8B00FA8E18 /* InfoPlist.strings in Resources */,
 				18A83C76196EBB8B00FA8E18 /* Main.storyboard in Resources */,
@@ -268,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A83C79196EBB8B00FA8E18 /* VRViewController.m in Sources */,
-				18A83C9B196EBBB800FA8E18 /* VRRecorder.m in Sources */,
 				18A83C73196EBB8B00FA8E18 /* VRAppDelegate.m in Sources */,
 				18A83C6F196EBB8B00FA8E18 /* main.m in Sources */,
 			);
@@ -475,6 +469,7 @@
 				18A83C93196EBB8C00FA8E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18A83C94196EBB8C00FA8E18 /* Build configuration list for PBXNativeTarget "VideoRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +478,7 @@
 				18A83C96196EBB8C00FA8E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
