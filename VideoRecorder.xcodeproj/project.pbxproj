@@ -22,6 +22,7 @@
 		18A83C8C196EBB8C00FA8E18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A83C8A196EBB8C00FA8E18 /* InfoPlist.strings */; };
 		18A83C8E196EBB8C00FA8E18 /* VideoRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */; };
 		18A83C98196EBB9F00FA8E18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */; };
+		18B73CCD196F29E30048D041 /* AppIcon60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B73CCC196F29E30048D041 /* AppIcon60pt.png */; };
 		18B9E92C196EE0B1008FC38C /* LaunchImage2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */; };
 		18B9E92D196EE0B1008FC38C /* LaunchImageR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		18A83C8B196EBB8C00FA8E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18A83C8D196EBB8C00FA8E18 /* VideoRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecorderTests.m; sourceTree = "<group>"; };
 		18A83C97196EBB9F00FA8E18 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		18B73CCC196F29E30048D041 /* AppIcon60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60pt.png; sourceTree = "<group>"; };
 		18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage2x.png; sourceTree = "<group>"; };
 		18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImageR4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		18A83C56196EBB8B00FA8E18 = {
 			isa = PBXGroup;
 			children = (
+				18B73CCC196F29E30048D041 /* AppIcon60pt.png */,
 				18B9E92A196EE0B1008FC38C /* LaunchImage2x.png */,
 				18B9E92B196EE0B1008FC38C /* LaunchImageR4.png */,
 				18A83C61196EBB8B00FA8E18 /* Frameworks */,
@@ -241,6 +244,7 @@
 			files = (
 				18B9E92D196EE0B1008FC38C /* LaunchImageR4.png in Resources */,
 				18B9E92C196EE0B1008FC38C /* LaunchImage2x.png in Resources */,
+				18B73CCD196F29E30048D041 /* AppIcon60pt.png in Resources */,
 				18A83C7B196EBB8B00FA8E18 /* Images.xcassets in Resources */,
 				18A83C6D196EBB8B00FA8E18 /* InfoPlist.strings in Resources */,
 				18A83C76196EBB8B00FA8E18 /* Main.storyboard in Resources */,
